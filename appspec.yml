@@ -1,5 +1,5 @@
 version: 0.0
-OS: linux
+os : linux
 files: 
   - 
     destination: /var/www/html/
