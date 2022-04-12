@@ -1,0 +1,16 @@
+version: 0.0
+OS: linux
+files: 
+  - 
+    destination: /var/www/html/
+    source: /index.html
+hooks: 
+  BeforeInstall: 
+    - 
+      location: scripts/depend
+      runs: root
+      timeout: 300
+    - 
+      location: scripts/start
+      runs: root
+      timeout: 300
